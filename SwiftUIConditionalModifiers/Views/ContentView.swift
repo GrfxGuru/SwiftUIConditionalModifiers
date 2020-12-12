@@ -9,8 +9,38 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            VStack {
+                HStack {
+                    Text("Player 1")
+                    Spacer()
+                    Text("100")
+                }
+                HStack {
+                    Text("Current Player")
+                        .font(.footnote)
+                    Spacer()
+                }
+            }.padding().background(            Color.green.brightness(0.3)
+            )
+            VStack {
+                HStack {
+                    Text("Player 2")
+                    Spacer()
+                    Text("350")
+                }
+                HStack {
+                    Text("Current Player")
+                        .font(.footnote)
+                    Spacer()
+                }
+            }.padding().background(            Color.gray.brightness(0.3)
+            )
+            Spacer()
+            Button("Next Player", action: {
+                // TODO Code here
+            })
+        }.padding()
     }
 }
 
