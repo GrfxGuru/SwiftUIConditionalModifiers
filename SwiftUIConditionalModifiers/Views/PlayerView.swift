@@ -11,6 +11,7 @@ struct PlayerView: View {
 
     let playerName: String
     @State var playerScore: Int
+    var isCurrentPlayer: Bool
 
     var body: some View {
         VStack {
@@ -19,10 +20,12 @@ struct PlayerView: View {
                 Spacer()
                 Text("\(playerScore)")
             }
-            HStack {
-                Text("Current Player")
-                    .font(.footnote)
-                Spacer()
+            if isCurrentPlayer {
+                HStack {
+                    Text("Current Player")
+                        .font(.footnote)
+                    Spacer()
+                }
             }
         }.padding().background(            Color.green.brightness(0.3)
         )
@@ -31,6 +34,6 @@ struct PlayerView: View {
 
 struct PlayerView_Previews: PreviewProvider {
     static var previews: some View {
-        PlayerView(playerName: "Player One", playerScore: 150)
+        PlayerView(playerName: "Player One", playerScore: 150, isCurrentPlayer: false)
     }
 }

@@ -8,13 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    @State var currentPlayer: Int = 1
+
     var body: some View {
         VStack {
-            PlayerView(playerName: "Player One", playerScore: 150)
-            PlayerView(playerName: "Player Two", playerScore: 356)
+            PlayerView(playerName: "Player One", playerScore: 150, isCurrentPlayer: currentPlayer == 1 ? true : false)
+            PlayerView(playerName: "Player Two", playerScore: 356, isCurrentPlayer: currentPlayer == 2 ? true : false)
             Spacer()
             Button("Next Player", action: {
-                // TODO Code here
+                if currentPlayer == 1 {
+                    currentPlayer = 2
+                } else {
+                    currentPlayer = 1
+                }
             })
         }.padding()
     }
