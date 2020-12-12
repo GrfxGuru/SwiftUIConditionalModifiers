@@ -27,8 +27,13 @@ struct PlayerView: View {
                     Spacer()
                 }
             }
-        }.padding().background(            Color.green.brightness(0.3)
-        )
+        }.padding()
+        .if(isCurrentPlayer) {
+            $0.background(Color.green.brightness(0.3))
+        }
+        .if(!isCurrentPlayer) {
+            $0.background(Color.gray.brightness(0.3))
+        }
     }
 }
 

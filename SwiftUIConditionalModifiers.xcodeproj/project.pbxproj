@@ -12,6 +12,7 @@
 		D030E5ED2584C03F0061D750 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D030E5EC2584C03F0061D750 /* Assets.xcassets */; };
 		D030E5F02584C03F0061D750 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D030E5EF2584C03F0061D750 /* Preview Assets.xcassets */; };
 		D030E5FF2584CCB20061D750 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D030E5FE2584CCB20061D750 /* PlayerView.swift */; };
+		D030E6062584DE780061D750 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D030E6052584DE780061D750 /* ViewExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		D030E5EF2584C03F0061D750 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D030E5F12584C03F0061D750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D030E5FE2584CCB20061D750 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		D030E6052584DE780061D750 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				D030E5EC2584C03F0061D750 /* Assets.xcassets */,
 				D030E5F12584C03F0061D750 /* Info.plist */,
 				D030E5EE2584C03F0061D750 /* Preview Content */,
+				D030E6052584DE780061D750 /* ViewExtensions.swift */,
 			);
 			path = SwiftUIConditionalModifiers;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			files = (
 				D030E5FF2584CCB20061D750 /* PlayerView.swift in Sources */,
 				D030E5EB2584C03E0061D750 /* ContentView.swift in Sources */,
+				D030E6062584DE780061D750 /* ViewExtensions.swift in Sources */,
 				D030E5E92584C03E0061D750 /* SwiftUIConditionalModifiersApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
